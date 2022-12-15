@@ -13,7 +13,9 @@ const Navbar = () => {
     <nav className="mx-auto container my-2 md:my-9 z-50 text-white p-5">
       <div className="flex justify-between items-center">
         <div>
-          <h3 className="text-3xl text-white">Hotel<span className="text-[#DFAA5B]">Ranking</span></h3>
+          <h3 className="text-3xl text-white">
+            Hotel<span className="text-[#DFAA5B]">Ranking</span>
+          </h3>
         </div>
 
         <div className="hidden md:block">
@@ -65,19 +67,16 @@ const Navbar = () => {
           <div className="flex flex-col items-center justify-start h-full mt-44">
             <ul className="space-y-10 mx-auto mb-10">
               <li onClick={() => setShowMobileMenu(false)}>
-                <Link to="/">
-                  Home
-                </Link>
+                <Link to="/">Home</Link>
               </li>
               <li onClick={() => setShowMobileMenu(false)}>
-                <Link to="/about">
-                  About
-                </Link>
+                <Link to="/hotels">Hotels</Link>
               </li>
               <li onClick={() => setShowMobileMenu(false)}>
-                <Link to="/apply">
-                  Apply
-                </Link>
+                <Link to="/login">login</Link>
+              </li>
+              <li onClick={() => setShowMobileMenu(false)}>
+                <Link to="/register">register</Link>
               </li>
             </ul>
             <div className="flex items-center">
